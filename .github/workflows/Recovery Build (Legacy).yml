@@ -14,11 +14,11 @@ on:
       DEVICE_TREE_URL:
         description: 'DEVICE_TREE_URL'
         required: true
-        default: 'https://github.com/ycly2333/android_device_EEBBK_H3000S-twrp'
+        default: 'https://github.com/twrpdtgen/android_device_nubia_NX669J.git'
       DEVICE_TREE_BRANCH:
         description: 'DEVICE_TREE_BRANCH'
         required: true
-        default: 'twrp-7.1'
+        default: 'twrp-12.1'
       DEVICE_PATH:
         description: 'DEVICE_PATH'
         required: true
@@ -30,17 +30,17 @@ on:
         description: 'COMMON_PATH (if no common tree, leave blank)'
         required: false
       DEVICE_NAME:
-        description: 'DEVICE_NAME'
+        description: 'NUBIA'
         required: true
-        default: 'H3000S'
+        default: 'NX669J'
       MAKEFILE_NAME:
-        description: 'MAKEFILE_NAME'
+        description: 'image'
         required: true
-        default: 'omni_H3000S'
+        default: 'omni_NX669J'
       BUILD_TARGET:
-        description: 'BUILD_TARGET'
+        description: 'TWRP'
         required: true
-        default: 'recovery'
+        default: 'boot'
 
 jobs:
   build:
